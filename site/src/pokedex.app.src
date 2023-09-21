@@ -1,0 +1,9 @@
+{application, pokedex,
+ [
+  {description, "My Nitrogen Web Project"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [kernel, stdlib, nitrogen_core]},
+  {mod, { pokedex_app, []}},
+  {env, []}
+ ]}.
