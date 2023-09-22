@@ -1,7 +1,9 @@
-# About
+# Beamdex
 
 This is an Erlang web application using the [Nitrogen Web
 Framework](https://nitrogenproject.com).
+
+<img width="905" alt="image" src="https://github.com/davecaos/beamdex/assets/6124495/8e47aefd-438c-46d5-a911-5eef5e3bf486">
 
 # Building
 
@@ -15,19 +17,9 @@ Erlang](https://www.erlang-solutions.com/resources/download.html).
 
 # Running
 
-You can start the application with:
+You can start the application with command:
 
-  bin/nitrogen start
-
-which will start it in daemon mode.  You can attach to this started daemon
-with:
-
-  bin/nitrogen attach
-
-If you'd rather have an Erlang console right away, rather than starting a
-daemon, type:
-
-  bin/nitrogen console
+  make run_dev
 
 # Config
 
