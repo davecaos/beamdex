@@ -8,29 +8,29 @@ get_pokemons() -> [
         name="Erlang",
         number="1",
         image="erlang.png",
-        creators=[],
+        creators=["Joe, Robert & Mike"],
         creation_date="1986"
     },
     #pokemon {
         name="Elixir",
         number="2",
         image="elixir.png",
-        creators=[],
-        creation_date=undefined
+        creators=["José Valim"],
+        creation_date="2011"
     },
     #pokemon {
         name="LFF",
         number="3",
         image="lfe.png",
-        creators=[],
-        creation_date=undefined
+        creators=["Robert Virding"],
+        creation_date="2008"
     },
     #pokemon {
         name="Gleam",
         number="4",
         image="gleam.png",
-        creators=[],
-        creation_date=undefined
+        creators=["Louis Pilfold"],
+        creation_date="2019"
     },
     #pokemon {
         name="Efene",
@@ -43,7 +43,7 @@ get_pokemons() -> [
         name="Clojerl",
         number="6",
         image="clojerl.png",
-        creators=[],
-        creation_date=undefined
+        creators=["Juan facorro"],
+        creation_date="2015"
     }
 ].

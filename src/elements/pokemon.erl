@@ -27,7 +27,7 @@ draw_card(Pokemon) ->
         ]
     }.
 
-draw_pokemon_details({show_details, Pokemon}) ->
+draw_pokemon_details(Pokemon) ->
     ?PRINT(Pokemon),
     #panel{
         class=pokemon_details_container,
@@ -40,7 +40,7 @@ draw_pokemon_details({show_details, Pokemon}) ->
                 body=[
                     #panel{body=#image{style="max-width: 300px;", image=["/images/avatar/", "00",Pokemon#pokemon.number,".jpeg"]}},
                     #panel{
-                        style="text-align: left; font-size: 20px;",
+                        style="text-align: left; font-size: 20px; background: white; border-radius: 5px; margin: 10px; padding:10px; width: 100%; height: 100%;",
                         body=["Creator(s): ",Pokemon#pokemon.creators,#br{}, #br{},"First appeared: ",Pokemon#pokemon.creation_date
                     ]}     
                 ]
