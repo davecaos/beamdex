@@ -3,17 +3,7 @@
 This is an Erlang web application using the [Nitrogen Web
 Framework](https://nitrogenproject.com).
 
-<img width="905" alt="image" src="https://github.com/davecaos/beamdex/assets/6124495/8e47aefd-438c-46d5-a911-5eef5e3bf486">
-
-# Building
-
-You can rebuild the project by typing:
-
-   make
-
-If this fails, it likely means that its a slim release and Erlang is not
-installed on this machine. Please [install
-Erlang](https://www.erlang-solutions.com/resources/download.html).
+Those are the slides of the talk [Modern Clicks (Erlang Fullstack Web Development with Nitrogen](https://github.com/davecaos/beamdex/blob/main/presentation.pdf) for Elixir Fortaleza Conf 2023
 
 # Running
 

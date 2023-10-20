@@ -37,8 +37,8 @@ draw_pokemon_main_grid() ->
         }
     }.
 
-event({show_details, Number}) ->
-    PokemonsDetails = pokemon:draw_pokemon_details(Number),
+event({show_details, Pokemon}) ->
+    PokemonsDetails = pokemon:draw_pokemon_details(Pokemon),
     wf:update(pokemon_body, PokemonsDetails);
 
 event(close_details) ->

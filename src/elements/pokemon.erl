@@ -10,13 +10,10 @@ draw_card(Pokemon) ->
         body=[
             #panel{class=card__header, body=[
                 #panel{class=poke__number, body=["#00",Pokemon#pokemon.number]},
-                % You can add inline styles
-                #button{style="background:transparent; border: none; cursor: pointer;",
-                    % This posback will be solved with the event({show_details, Number}) funtion on index.erl module 
+                #button{style="background:transparent; border: none; cursor: pointer;", 
                     postback = {show_details, Pokemon},
                     body=[
                         #panel{class=info__icon,
-                            % You can add html,  but must be stringified
                             body="<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" viewBox=\"0 0 512 512\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z\"></path></svg>"
                         }
                     ]
@@ -31,7 +28,6 @@ draw_card(Pokemon) ->
     }.
 
 draw_pokemon_details(Pokemon) ->
-    %% You can debbug on the fly with ?PRINT/1 macro.
     ?PRINT(Pokemon),
     #panel{
         class=pokemon_details_container,
@@ -40,7 +36,7 @@ draw_pokemon_details(Pokemon) ->
             #panel{class='card-title',style="background: linear-gradient(#a8ff98,#d6a2e4);",body=Pokemon#pokemon.name},
             #panel{
                 class=box,
-                style="background: linear-gradient(#a8ff98,#d6a2e4); margin:5px;",
+                style="background: linear-gradient(#a8ff98,#d6a2e4);",
                 body=[
                     #panel{body=#image{style="max-width: 300px;", image=["/images/avatar/", "00",Pokemon#pokemon.number,".jpeg"]}},
                     #panel{
@@ -50,7 +46,6 @@ draw_pokemon_details(Pokemon) ->
                 ]
             },
             #panel{style="text-align: right;",
-                % This posback will be solved with the event(close_details) funtion on index.erl module 
                 body=#button{style="text-align: center;", body="Close", postback=close_details}
             }
             
