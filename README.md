@@ -3,7 +3,9 @@
 This is an Erlang web application using the [Nitrogen Web
 Framework](https://nitrogenproject.com).
 
-Those are the slides of the talk [Modern Clicks (Erlang Fullstack Web Development with Nitrogen](https://github.com/davecaos/beamdex/blob/main/presentation.pdf) for Elixir Fortaleza Conf 2023
+Those are the slides of the talk [Modern Clicks (Erlang Fullstack Web Development with Nitrogen](https://github.com/davecaos/beamdex/blob/main/presentation.pdf) for [Elixir Fortaleza Conf 2023](https://elixir.fortal.br/)
+
+<img width="905" alt="image" src="https://github.com/davecaos/beamdex/assets/6124495/8e47aefd-438c-46d5-a911-5eef5e3bf486">
 
 # Running
 
